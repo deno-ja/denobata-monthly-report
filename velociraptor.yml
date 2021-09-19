@@ -1,0 +1,11 @@
+scripts:
+  dev:
+    cmd: deployctl run ./server.ts
+    desc: Start dev server
+    watch: true
+  fmt:
+    cmd: deno fmt
+    desc: format code
+  lint:
+    cmd: deno lint
+    desc: lint code
