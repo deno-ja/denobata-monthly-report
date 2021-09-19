@@ -1,45 +1,11 @@
 {
   "sourceDir": "docs",
-  "siteName": "Diplodocus",
-  "description": "Static Asset Server for Deno Deploy",
-
+  "siteName": "Denoばた会議 Monthly レポート",
+  "description": "Denoばた会議の各回で共有された内容について、箇条書きで雑に紹介していくページです",
   "navLinks": [
-    { "title": "Docs", "path": "/docs" },
-    { "title": "Examples", "path": "/examples" },
-    { "title": "Lorem", "path": "/lorem" },
-    { "title": "Acknowledgements", "path": "/acknowledgements" },
     {
-      "title": "Links",
-      "items": [
-        {
-          "path": "https://github.com/kawarimidoll/deno-diplodocus",
-          "title": "GitHub"
-        },
-        { "path": "https://deno.land/x/diplodocus", "title": "deno.land/x" }
-      ]
-    }
-  ],
-
-  "listPages": [
-    {
-      "title": "Docs",
-      "path": "/docs",
-      "items": [
-        { "path": "/docs/usage", "title": "Usage" },
-        { "path": "/docs/config", "title": "Config" }
-      ]
-    },
-    {
-      "title": "Lorem",
-      "path": "/lorem",
-      "items": [
-        { "path": "/lorem/01", "title": "Lorem 01" },
-        { "path": "/lorem/02", "title": "Lorem 02" },
-        { "path": "/lorem/03", "title": "Lorem 03" },
-        { "path": "/lorem/04", "title": "Lorem 04" },
-        { "path": "/lorem/05", "title": "Lorem 05" },
-        { "path": "/lorem/06", "title": "Lorem 06" }
-      ]
+      "title": "GitHub",
+      "path": "https://github.com/windchime-yk/denobata-monthly-report"
     }
   ]
 }
