@@ -1,7 +1,11 @@
 {
   "sourceDir": "docs",
+  "lang": "ja",
   "siteName": "Denoばた会議 Monthly レポート",
   "description": "Denoばた会議の各回で共有された内容について、箇条書きで雑に紹介していくページです",
+  "favicon": "https://twemoji.maxcdn.com/v/13.1.0/72x72/1f4dd.png",
+  "siteImage": "https://twemoji.maxcdn.com/v/13.1.0/72x72/1f4dd.png",
+  "twitter": "@windchime_yk",
   "navLinks": [
     {
       "title": "GitHub",
