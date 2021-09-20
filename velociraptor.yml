@@ -4,7 +4,7 @@ scripts:
     desc: Start dev server
     watch: true
   fmt:
-    cmd: deno fmt
+    cmd: deno fmt --ignore=README.md,docs/
     desc: format code
   lint:
     cmd: deno lint
