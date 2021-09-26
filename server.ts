@@ -1,4 +1,4 @@
-import { Diplodocus } from "https://deno.land/x/diplodocus@0.0.1/mod.ts";
+import { Diplodocus } from "https://deno.land/x/diplodocus@0.0.3/mod.ts";
 
 const diplodocus = await Diplodocus.load("./diplodocus.json");
 
