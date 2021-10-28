@@ -15,3 +15,6 @@ Denoばた会議の各回で共有された内容について、箇条書きで�
 
 - [週刊Deno](https://uki00a.github.io/deno-weekly/)
 - [Deno公式ブログ](https://deno.com/blog)
+
+## 免責事項
+このレポートはDiscord上の通話を聞きながら記録したものですが、通話内容を正しく記録していると保証するものではありません。
