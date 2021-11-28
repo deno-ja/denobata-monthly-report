@@ -1,6 +1,6 @@
 scripts:
   dev:
-    cmd: deployctl run ./server.ts
+    cmd: deno run --allow-net --allow-read --no-check ./server.ts
     desc: Start dev server
     watch: true
   fmt:
