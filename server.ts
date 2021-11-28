@@ -1,18 +1,9 @@
 import { Diplodocus } from "https://deno.land/x/diplodocus@0.0.3/mod.ts";
+import { serve } from "https://deno.land/std@0.116.0/http/server.ts";
 
 const diplodocus = await Diplodocus.load();
 
-const PORT = 8080;
-const listener = Deno.listen({ port: PORT });
-console.log(`HTTP server listening on http://localhost:${PORT}`);
+const ADDR = ':8080';
+console.log(`HTTP server listening on http://localhost${ADDR}`);
 
-async function handleConn(conn: Deno.Conn) {
-  const httpConn = Deno.serveHttp(conn);
-  for await (const e of httpConn) {
-    e.respondWith(diplodocus.handler(e.request));
-  }
-}
-
-for await (const conn of listener) {
-  handleConn(conn);
-}
+await serve(async (request) => await diplodocus.handler(request), { addr: ADDR })
