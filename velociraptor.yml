@@ -7,6 +7,11 @@ scripts:
       - read
     noCheck: true
     watch: true
+  generate:
+    cmd: deno run ./scripts/generate-new-report.ts
+    desc: Generate new report
+    allow:
+      - write
   fmt:
     cmd: deno fmt --ignore=README.md,CONTRIBUTING.md,docs/
     desc: format code
