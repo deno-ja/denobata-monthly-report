@@ -8,7 +8,7 @@ scripts:
     noCheck: true
     watch: true
   fmt:
-    cmd: deno fmt --ignore=README.md,docs/
+    cmd: deno fmt --ignore=README.md,CONTRIBUTING.md,docs/
     desc: format code
   lint:
     cmd: deno lint
