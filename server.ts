@@ -3,7 +3,7 @@ import { serve } from "https://deno.land/std@0.116.0/http/server.ts";
 
 const diplodocus = await Diplodocus.load();
 
-const ADDR = ':8080';
+const ADDR = ":8080";
 console.log(`HTTP server listening on http://localhost${ADDR}`);
 
 await serve(async (request) => await diplodocus.handler(request), { addr: ADDR })
