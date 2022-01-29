@@ -1,7 +1,11 @@
 scripts:
   dev:
-    cmd: deno run --allow-net --allow-read --no-check ./server.ts
+    cmd: deno run ./server.ts
     desc: Start dev server
+    allow:
+      - net
+      - read
+    noCheck: true
     watch: true
   fmt:
     cmd: deno fmt --ignore=README.md,docs/
