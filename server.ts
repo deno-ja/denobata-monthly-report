@@ -6,4 +6,4 @@ const diplodocus = await Diplodocus.load();
 const ADDR = ":8080";
 console.log(`HTTP server listening on http://localhost${ADDR}`);
 
-await serve(async (request) => await diplodocus.handler(request), { addr: ADDR })
+serve((request) => diplodocus.handler(request), { addr: ADDR })
