@@ -1,9 +1,30 @@
-# Denoばた会議 Monthly レポートへのPRについて
+# Denoばた会議 Monthly レポートへのコントリビューション
+## Issueについて
+不足部分への提案、大歓迎です。
+
+## Pull Requestについて
 誤字脱字の修正や、ハイパーリンクの新規追加や修正、誤謬の訂正など大歓迎です。
 
-Issueについての方針は特にありません。Issueになりうるものが特にないという認識のためです。
+## 記載規則について
+- 人名は『Discord上で出てきた名前＋さん』にする
+  - 検索性を担保するため、略されてる方（crowlKatsさんの場合クロールさん）については略さず書く
+  - 一定のブレは許容する
+- Deno社に統一
+
+## 起動方法
+```bash
+deno task dev
+```
 
 ## 新規レポート作成方法
-対話的CLIで作成可能です。  
-deno-util CLIを導入後、`deno-util dcr`を実行してください。  
-deno-util CLIの導入方法は[deno-utilのREADME](https://github.com/windchime-yk/deno-util#cli%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)を参照してください（v1.3.0で追加された機能のため、インストールコマンドにあるv1.0.0はv1.3.0に書き換える必要があります）
+deno-util CLIで作成可能です。
+以下のコマンドでインストールし、
+
+```bash
+deno install -n deno-util --allow-read --allow-write https://pax.deno.dev/windchime-yk/deno-util@<VERSION>/cli.ts
+```
+以下のコマンドで対話的入力が起動、新規レポートが出力されます。
+
+```bash
+deno-util dcr
+```
