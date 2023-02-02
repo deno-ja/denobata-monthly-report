@@ -17,14 +17,8 @@ deno task dev
 ```
 
 ## 新規レポート作成方法
-deno-util CLIで作成可能です。
-以下のコマンドでインストールし、
-
-```bash
-deno install -n deno-util --allow-read --allow-write https://pax.deno.dev/windchime-yk/deno-util@<VERSION>/cli.ts
-```
 以下のコマンドで対話的入力が起動、新規レポートが出力されます。
 
 ```bash
-deno-util dcr
+deno task create
 ```
