@@ -3,5 +3,6 @@
     "create": "deno run --allow-read --allow-write https://pax.deno.dev/windchime-yk/deno-util@v1.6.2/cli.ts dcr",
     "dev": "deno run --allow-net --allow-read --watch ./server.ts",
     "fmt": "deno fmt --ignore=README.md,CONTRIBUTING.md,docs/"
-  }
+  },
+  "importMap": "./import_map.json"
 }
