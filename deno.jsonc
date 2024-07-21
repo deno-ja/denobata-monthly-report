@@ -4,5 +4,7 @@
     "dev": "deno run --allow-net --allow-read --watch ./server.ts",
     "fmt": "deno fmt --ignore=README.md,CONTRIBUTING.md,docs/"
   },
-  "importMap": "./import_map.json"
+  "imports": {
+    "https://deno.land/std/encoding/_yaml/loader/loader.ts": "https://deno.land/std@0.179.0/encoding/_yaml/loader/loader.ts"
+  }
 }
