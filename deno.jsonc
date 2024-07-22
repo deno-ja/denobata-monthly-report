@@ -1,8 +1,10 @@
 {
   "tasks": {
-    "create": "deno run --allow-net=raw.githubusercontent.com,connpass.com --allow-read --allow-write https://pax.deno.dev/windchime-yk/deno-util@v1.6.3/cli.ts dcr",
+    "create": "deno run --allow-net=jsr.io --allow-read --allow-write --allow-env jsr:@whyk/utils@1.7.1/cli dcr",
     "dev": "deno run --allow-net --allow-read --watch ./server.ts",
     "fmt": "deno fmt --ignore=README.md,CONTRIBUTING.md,docs/"
   },
-  "importMap": "./import_map.json"
+  "imports": {
+    "https://deno.land/std/encoding/_yaml/loader/loader.ts": "https://deno.land/std@0.179.0/encoding/_yaml/loader/loader.ts"
+  }
 }
